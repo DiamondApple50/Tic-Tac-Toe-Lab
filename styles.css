@@ -1,0 +1,57 @@
+#board{
+    padding-top: 3em;
+    text-align: center;
+}
+
+div > div{
+    float: left;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.row{
+    clear:both;
+    margin: 0 auto;
+    margin-left: 20em;
+    width: 302px;
+}
+
+.top-left{
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.top-middle{
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.top-right{
+    border-bottom: 1px black solid;
+}
+
+.center-left{
+    border-bottom: 1px black solid;
+}
+
+.center{
+    border: 1px black solid
+}
+
+.center-right{
+    border-bottom: 1px black solid;
+}
+
+.bottom-left{
+    border-right: 1px black solid;
+}
+
+.bottom-right{
+    border-left: 1px black solid;
+}
+
+div>div>div:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
