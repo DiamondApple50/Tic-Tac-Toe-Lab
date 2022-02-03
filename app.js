@@ -2,7 +2,7 @@ let cells = document.querySelectorAll('.row > div');
 
 let turnCounter = 0
 
-let winner = 0
+let winner = false
 
 for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', cellClicked)
@@ -31,7 +31,7 @@ function checkDraw() {
             draw++
             console.log(draw)
         }
-        if (draw >= 9) {
+        if (draw >= 9 && winner == false) {
             alert("It's a Draw")   
         }        
     }
@@ -54,9 +54,11 @@ for (let i = 0; i < winningCombos.length; i++) {
 
         if(xCount == 3) {
         alert("X Wins")
+        winner = true
         }
         if (oCount == 3) {
         alert('O Wins')
+        winner = true
         }
     }   
 }
@@ -69,13 +71,13 @@ function cellClicked() {
             if (turnCounter % 2 == 0) {
                 event.target.textContent = 'X'
                 turnCounter++
-                checkDraw()
                 checkWin()               
+                checkDraw()
             } else if (turnCounter % 2 == 1) {
                 event.target.textContent = 'O'
                 turnCounter++
-                checkDraw()
                 checkWin()               
+                checkDraw()
         }
     }
 }
