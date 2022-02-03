@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,30 @@
     <link rel="stylesheet" href="styles.css">
     </link>
 </head>
-<body>  
+
+<body>
+
     <div id="board">
         <h1>Tic Tac Toe</h1>
+        <input class="Reset" type="button" value="Reset Board" onClick="document.location.reload(true)">
         <div class="row">
-            <div class="top-left" id="1"></div>
-            <div class="top-middle" id="2"></div>
-            <div class="top-right" id="3"></div>
+            <div class="top-left" id = "1"></div>
+            <div class="top-middle" id = "2"></div>
+            <div class="top-right" id = "3"></div>
         </div>
         <div class="row">
-            <div class="center-left" id="4"></div>
-            <div class="center" id="5"></div>
-            <div class="center-right" id="6"></div>
+            <div class="center-left" id = "4"></div>
+            <div class="center" id = "5"></div>
+            <div class="center-right" id = "6"></div>
         </div>
         <div class="row">
-            <div class="bottom-left" id="7"></div>
-            <div class="bottom-middle" id="8"></div>
-            <div class="bottom-right" id="9l"></div>
+            <div class="bottom-left" id = "7"></div>
+            <div class="bottom-middle" id = "8"></div>
+            <div class="bottom-right" id = "9"></div>
+
         </div>
+        <div>
+        </div>
+        <script src="app.js"></script>
     </div>
 </body>
